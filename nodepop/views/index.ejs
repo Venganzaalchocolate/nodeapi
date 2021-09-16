@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% articulos.forEach(function(articulos) { %>
+      <div>
+        <h2><%=articulos.nombre%></h2>
+        <% if (articulos.venta) { %>
+          <h3 class="estado">Se Vende</h3>
+        <% } else { %>
+          <h3 class="estado">Se Busca</h3>
+        <% } %> %>
+        <img src="/images/<%=articulos.foto %>">
+        <h3 class="precio"><%=articulos.precio %> €</h3>
+        <div class="tags">
+          <% articulos.tags.forEach(element => { %>
+            <div class="elemento"><%=element.toUpperCase()%></div>
+          <% }) %>
+        </div>
+      </div>
+  <% }); %>
+    
+  </body>
+</html>

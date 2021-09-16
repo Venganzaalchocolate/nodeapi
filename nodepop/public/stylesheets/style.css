@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  justify-content: center;
+}
+
+div{
+  background-color: rgb(90, 134, 119);
+  color: white;
+  border-radius: 1em;
+  width: 20%;
+  padding: 1rem;
+  margin: 1rem;
+  
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+
+img {
+  border-color: coral;
+  border-radius: 1rem;
+  width: 100%;
+  height: 4rem;
+}
+
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+.precio {
+  font-size: 2rem;
+  text-align: end;
+  color: rgb(255, 255, 255);
+  margin: 0%;
+}
+
+.estado{
+  font-size: 1rem;
+  text-align: end;
+  color: rgb(228, 134, 100);
+  margin: 0.5rem;
+
+}
+
+.tags{
+  display: inline-block;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.elemento{
+  color: aquamarine;
+  font-weight: bold;
+  display: inline;
+  border-radius: 0%;
+  width: auto;
+  padding: 0%;
+  margin: 1rem;
+
+}
