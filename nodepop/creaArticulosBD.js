@@ -1,11 +1,11 @@
 // conexión a la base de datos
-const dbconexion=require('./connectMongoose')
+const dbconexion=require('./lib/connectMongoose')
 
 // modelo de artículos
-const Articulo= require('../model/Articulo')
+const Articulo= require('./model/Articulo')
 
 // json de muestra
-const articuloEjemplo = require('./ejemplo.json')
+const articuloEjemplo = require('./lib/ejemplo.json')
 
 main().catch(err=>console.log('Hubo un error', err))
 
