@@ -4,8 +4,7 @@ Desarrollar el API que se ejecutará en el servidor de un servicio de venta de a
 segunda mano llamado Nodepop.
 
 El servicio mantiene anuncios de compra o venta de artículos y permite buscar como poner
-filtros por varios criterios, por tanto la API a desarrollar deberá proveer los métodos
-necesarios para esto.
+filtros por varios criterios.
 
 Cada anuncio tiene los siguientes datos:
 - Nombre del artículo, un anuncio siempre tendrá un solo artículo
@@ -16,7 +15,6 @@ Cada anuncio tiene los siguientes datos:
 
 ## Comenzando 🚀
 
-<<<<<<< HEAD
 - Clona el repositorio:  
 
 HTTPS:  
@@ -43,7 +41,7 @@ Inicializar Base de Datos con 6 anuncios de prueba.
 Iniciar la aplicación:  
 `npm start`  
 
-El puero por defecto es el 3000, para cambiarlo solo debes acceder a la carpeta bin en el archivo www.js linea 15  
+El puerto por defecto es el 3000, para cambiarlo solo debes acceder a la carpeta bin en el archivo www.js linea 15  
 `var port = normalizePort(process.env.PORT || '3000');`  
   
 ## Rutas ⚙️
@@ -56,13 +54,6 @@ API:
 `http://localhost:3000/api/articulos`
 - Página que muestra una lista de anuncios en formato JSON
 
-
-Operaciones que realiza:
-- Lista de anuncios con posibilidad de paginación. Con filtros por tag, tipo de anuncio
-(venta o búsqueda), rango de precio (precio min. y precio max.) y nombre de artículo
-(que empiece por el dato buscado)
-- Lista de tags existentes
-- Creación de anuncio
 
 ### Operaciones que realiza 🔩
 - Busqueda de anuncios con filtros por:
