@@ -16,6 +16,7 @@ Cada anuncio tiene los siguientes datos:
 
 ## Comenzando 🚀
 
+<<<<<<< HEAD
 - Clona el repositorio:  
 
 HTTPS:  
