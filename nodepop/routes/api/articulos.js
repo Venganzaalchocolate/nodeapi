@@ -62,11 +62,11 @@ router.get('/', async (req, res, next) => {
             {   let y=precio.slice(1);
                 filtro.precio ={$lt:`${y}`};}
 
+            else if (Math.sign(precio))
+            {filtro.precio = precio;}
+            
             else if (entre[0]!=='' && entre[1]!=='')
             {filtro.precio ={$gte:`${entre[0]}`, $lt:`${entre[1]}`};}
-
-            else if (Math.sign(precio))
-            {filtro.precio = precio;} 
         }
 
         
