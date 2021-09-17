@@ -64,6 +64,8 @@ API:
         - Busqueda: venta=false
             - Ejemplo: `http://localhost:3000/api/articulos?venta=true`
     - Precio
+        - Filtrar articulo por precio exacto
+            - Ejemplo: `http://localhost:3000/api/articulos?precio=45`
         - Filtrar articulos con un precio menor que: numero-
             - Ejemplo: `http://localhost:3000/api/articulos?precio=-200`
         - Filtrar articulos con un precio mayor que: -numero
