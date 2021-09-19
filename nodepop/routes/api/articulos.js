@@ -55,7 +55,6 @@ router.get('/', async (req, res, next) => {
 
             if (mayorQue==='-')
             {   let x=precio.substr(0, precio.length - 1);
-                console.log(x)
                 filtro.precio ={$gte:`${x}`};}
                 
             else if (menorQue==='-')
@@ -94,7 +93,6 @@ router.get('/:identificador', async (req, res, next)=> {
     } catch (err) {
         next(err);
     }
-    
 }) 
 
 //Crear un articulo POSTMAN:(post > body > x-www)

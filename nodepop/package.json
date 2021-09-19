@@ -4,9 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "install_bd": "node creaArticulosBS.js"
+    "bd": "node creaArticulosBD.js"
   },
-
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
@@ -15,6 +14,8 @@
     "http-errors": "~1.6.3",
     "mongoose": "^6.0.5",
     "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
   }
 }
-

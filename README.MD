@@ -32,11 +32,13 @@ Tener instalado:
 
 ### Instalación 🔧
 
+Debes estar dentro de la carpeta nodepop.
+
 Instalar dependencias:  
 `npm install`  
 
 Inicializar Base de Datos con 6 anuncios de prueba.  
-`node creaArticulosBD.js`  
+`npm run bd`  
 
 Iniciar la aplicación:  
 `npm start`  
@@ -60,21 +62,21 @@ API:
     - Tag
             - Ejemplo: `http://localhost:3000/api/articulos?tags=motor`
     - Tipo de anuncio (venta o búsqueda)
-        - Venta: venta=true
-        - Busqueda: venta=false
+        - Venta: `venta=true` 
+        - Busqueda: `venta=false`
             - Ejemplo: `http://localhost:3000/api/articulos?venta=true`
     - Precio
         - Filtrar articulo por precio exacto
             - Ejemplo: `http://localhost:3000/api/articulos?precio=45`
-        - Filtrar articulos con un precio menor que: numero-
+        - Filtrar articulos con un precio menor que: `precio=<numero>-`
             - Ejemplo: `http://localhost:3000/api/articulos?precio=-200`
-        - Filtrar articulos con un precio mayor que: -numero
+        - Filtrar articulos con un precio mayor que: `precio=-<numero>`
             - Ejemplo: `http://localhost:3000/api/articulos?precio=200-`
-        - Filtrar articulos conprendido entre: numero-numero
+        - Filtrar articulos conprendido entre: `precio=<numero>-<numero>`
             - Ejemplo: `http://localhost:3000/api/articulos?precio=20-200`
 
     - Nombre de artículo 
-        - Puede contener solo parte del nombre, no distingue entre mayúsculas y minúsculas
+        - Puede contener solo parte del nombre, no distingue entre mayúsculas y minúsculas. `nombre=<nombrearticulo>`
             - Ejemplo: `http://localhost:3000/api/articulos?nombre=Bike`
             - Ejemplo: `http://localhost:3000/api/articulos?nombre=Bi`
             - Ejemplo: `http://localhost:3000/api/articulos?nombre=bike`
@@ -87,10 +89,13 @@ API:
     Las busquedas pueden estar concatenadas entre si.
             - Ejemplo: `http://localhost:3000/apiv1/anuncios?tag=mobile&venta=false&nombre=ip&precio=50-&start=0&limit=2&sort=precio`
 
-- Lista de tags existentes. Muestra una lista de los tags existentes en la BD.
+- Lista de tags existentes. Muestra una lista de los tags existentes en la BD. 
 `http://localhost:3000/api/articulos/tags`
 
 - Creación, modificación y eliminación de artículos (Se debe tener encuenta el esquema y sus restricciones)
+
+- Puedes acceder a las imágenes a través de la ruta images. `/images/<nombreimagen.jpg>`
+            - Ejemplo: `http://localhost:3000/images/bike.jpg`
 
 ### Esquema del artículo ⌨️
 
